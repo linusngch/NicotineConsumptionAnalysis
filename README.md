@@ -1,6 +1,7 @@
 # Practical Application Initial Findings
 
 Link to data: https://archive.ics.uci.edu/dataset/373/drug+consumption+quantified
+
 Link to notebook: https://github.com/linusngch/week20practicalapplication/blob/main/Capstone%20Project%20Initial%20Findings.ipynb
 
 Nicotine is one of the most addicting agents has been said to be as addictive as cocaine and heroin. This substance interacts with the nicotinic acetyl chline
