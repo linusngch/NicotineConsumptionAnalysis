@@ -12,52 +12,55 @@ This machine learning analysis aims to identify those who are most at risk to be
 The data utilized from this project was from UCI's database and describes individuals based on their age, gender, use of drugs and more. Listed below are the user attributes 
 of the data used:
 
-ID: is a number of records in an original database. Cannot be related to participant. It can be used for reference only.
-Age (Real) is the age of partparticipant
-Gender: Male or Female
-Education: level of education of participant
-Country: country of origin of the participant
-Ethnicity: ethnicity of participant
-Nscore (Real) is NEO-FFI-R Neuroticism
-Escore (Real) is NEO-FFI-R Extraversion
-Oscore (Real) is NEO-FFI-R Openness to experience.
-Ascore (Real) is NEO-FFI-R Agreeableness.
-Cscore (Real) is NEO-FFI-R Conscientiousness.
-Impulsive (Real) is impulsiveness measured by BIS-11
-SS (Real) is sensation seeing measured by ImpSS
-Alcohol: alcohol consumption
-Amphet: amphetamines consumption
-Amyl: nitrite consumption
-Benzos: benzodiazepine consumption
-Caff: caffeine consumption
-Cannabis: marijuana consumption
-Choc: chocolate consumption
-Coke: cocaine consumption
-Crack: crack cocaine consumption
-Ecstasy: ecstasy consumption
-Heroin: heroin consumption
-Ketamine: ketamine consumption
-Legalh: legal highs consumption
-LSD: LSD consumption
-Meth: methadone consumption
-Mushroom: magic mushroom consumption
-Nicotine: nicotine consumption
-Semer: class of fictitious drug Semeron consumption (i.e. control)
-VSA: class of volatile substance abuse consumption
-Alcohol: alcohol consumption
+1. ID: is a number of records in an original database. Cannot be related to participant. It can be used for reference only.
+2. Age (Real) is the age of partparticipant
+3. Gender: Male or Female
+4. Education: level of education of participant
+5. Country: country of origin of the participant
+6. Ethnicity: ethnicity of participant
+7. Nscore (Real) is NEO-FFI-R Neuroticism
+8. Escore (Real) is NEO-FFI-R Extraversion
+9. Oscore (Real) is NEO-FFI-R Openness to experience.
+10. Ascore (Real) is NEO-FFI-R Agreeableness.
+11. Cscore (Real) is NEO-FFI-R Conscientiousness.
+12. Impulsive (Real) is impulsiveness measured by BIS-11
+13. SS (Real) is sensation seeing measured by ImpSS
+14. Alcohol: alcohol consumption
+15. Amphet: amphetamines consumption
+16. Amyl: nitrite consumption
+17. Benzos: benzodiazepine consumption
+18. Caff: caffeine consumption
+19. Cannabis: marijuana consumption
+20. Choc: chocolate consumption
+21. Coke: cocaine consumption
+22. Crack: crack cocaine consumption
+23. Ecstasy: ecstasy consumption
+24. Heroin: heroin consumption
+25. Ketamine: ketamine consumption
+26. Legalh: legal highs consumption
+27. LSD: LSD consumption
+28. Meth: methadone consumption
+29. Mushroom: magic mushroom consumption
+30. Nicotine: nicotine consumption
+31. Semer: class of fictitious drug Semeron consumption (i.e. control)
+32. VSA: class of volatile substance abuse consumption
+33. Alcohol: alcohol consumption
+
 Rating's for Drug Use:
+1.  CL0 Never Used
+2.  CL1 Used over a Decade Ago
+3.  CL2 Used in Last Decade
+4.  CL3 Used in Last Year 59
+5.  CL4 Used in Last Month
+6.  CL5 Used in Last Week
+7.  CL6 Used in Last Day
 
-CL0 Never Used
-CL1 Used over a Decade Ago
-CL2 Used in Last Decade
-CL3 Used in Last Year 59
-CL4 Used in Last Month
-CL5 Used in Last Week
-CL6 Used in Last Day
+To prepare the data for modeling, the columns Semer and Chocolate were removed as one is a control and the other is not a drug. Null values were removed and drug
+usage was encoded into numerical values. The nicotine column was separated from the data and changed into True/False values, indicating whether the person uses
+nicotine or not. Baseline models of logistic regression, SVM, KNN, and decision tree classifiers were created and their hyperparameters were optimized and cross-
+validated with its dataset.
 
-This analysis
-
-Fine tuning the machine learning classifiers yielded higher accuracy scores in testing data and ROC/AUC scores. Without fine tuning, logistic regression yielded
+After this fine tuning, the machine learning classifiers yielded higher accuracy scores in testing data and ROC/AUC scores. Without fine tuning, logistic regression yielded
 the higest accuracy. After, decision tree classifiers yielded the highest score with an increase by 0.08 in test data score and 0.18 in ROC/AUC scores. Logistic 
 regression barely showed any difference in scores before and after fine tuning, whereas SVM had an increase in scoring on the test data, but a drop in score for 
 the ROC/AUC score.
