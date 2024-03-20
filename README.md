@@ -1,8 +1,10 @@
 # Nicotine Consumption Analysis Through Machine Learning
 
-Link to data: https://archive.ics.uci.edu/dataset/373/drug+consumption+quantified
+Link to data:
+https://archive.ics.uci.edu/dataset/373/drug+consumption+quantified
 
-Link to notebook: https://github.com/linusngch/NicotineConsumptionAnalysis/blob/main/Nicotine%20Consumption%20Analysis%20Research.ipynb
+Link to notebook: 
+https://github.com/linusngch/NicotineConsumptionAnalysis/blob/main/Nicotine%20Consumption%20Analysis%20Research.ipynb
 
 **Project Introduction**
 Nicotine is one of the most addicting agents has been said to be as addictive as cocaine and heroin. This substance interacts with the nicotinic acetyl chline
