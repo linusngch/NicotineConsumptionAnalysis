@@ -1,4 +1,4 @@
-# Nicotine Consumption Analysis Through Machine Learning
+# Nicotine Addiction Analysis Utilizing Machine Learning
 
 Link to data:
 https://archive.ics.uci.edu/dataset/373/drug+consumption+quantified
