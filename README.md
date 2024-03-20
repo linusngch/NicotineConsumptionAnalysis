@@ -1,15 +1,24 @@
-# Practical Application Initial Findings
+# Nicotine Consumption Analysis Through Machine Learning
 
 Link to data: https://archive.ics.uci.edu/dataset/373/drug+consumption+quantified
+Link to notebook: https://github.com/linusngch/NicotineConsumptionAnalysis/blob/main/Nicotine%20Consumption%20Analysis%20Research.ipynb
 
-Link to notebook: https://github.com/linusngch/week20practicalapplication/blob/main/Capstone%20Project%20Initial%20Findings.ipynb
-
+**Project Introduction**
 Nicotine is one of the most addicting agents has been said to be as addictive as cocaine and heroin. This substance interacts with the nicotinic acetyl chline
-receptors and stimulates dopamine transmission. This stimulation results in mood elevation and apparent improvement in cognitive function. However, nicotine has 
-significant negative side effects such as insulin resistence, metabolic syndrome, and risk of diabetes. NAChRs by nicotine has also shown effects which are vital
-for the initiation and progression of cancer. 
+receptors of the brain and sets of a chain reaction, stimulating a dopamine release. This stimulation results in rewarded mood elevation, euphoria and a heightened
+sense of cognitive function.
 
-This machine learning analysis aims to identify those who are most at risk to becoming addcited to nicotine and the features which may influence nicotine addiction.
+However, nicotine's impact has significant negative side effects behind this immediate gratification. Studies have shown nicotine to be highly correlated with long-term
+health problems such as insulin resistence, metabolic syndrome, and risk of diabetes. Addition to these effects, NAChRs by nicotine has also shown effects which are vital
+for the initiation and dvelopment of cancer. 
+
+**Main Goal**
+This machine learning analysis aims to identify those who are most at risk to becoming addcited to nicotine and to highlight the features which may influence 
+nicotine addiction. This analysis will uncover various factors that could potentially contribute to the onset of nicotine dependency and will help support groups
+highlight individuals who are most at risk to being addicted to nicotine. Through this, there will be the potenitial mitigate the health problems and loss of
+life associated with nicotine. 
+
+**Data**
 The data utilized from this project was from UCI's database and describes individuals based on their age, gender, use of drugs and more. Listed below are the user attributes 
 of the data used:
 
@@ -56,11 +65,13 @@ Rating's for Drug Use:
 6.  CL5 Used in Last Week
 7.  CL6 Used in Last Day
 
+**Methodology**
 To prepare the data for modeling, the columns Semer and Chocolate were removed as one is a control and the other is not a drug. Null values were removed and drug
 usage was encoded into numerical values. The nicotine column was separated from the data and changed into True/False values, indicating whether the person uses
 nicotine or not. Baseline models of logistic regression, SVM, KNN, and decision tree classifiers were created and their hyperparameters were optimized and cross-
 validated with its dataset.
 
+**Findings**
 After this fine tuning, the machine learning classifiers yielded higher accuracy scores in testing data and ROC/AUC scores. Without fine tuning, logistic regression yielded
 the higest accuracy. After, decision tree classifiers yielded the highest score with an increase by 0.08 in test data score and 0.18 in ROC/AUC scores. Logistic 
 regression barely showed any difference in scores before and after fine tuning, whereas SVM had an increase in scoring on the test data, but a drop in score for 
@@ -71,6 +82,7 @@ models showcased similar results. Cannabis was the leading factor in signifcant 
 are a type of smoking habit, whereas many others are consumption or needle based. Decision trees showcased that Amphet and Age were the next two leading factors on
 whether an individual uses nicotine. Logistic regression had cocaine and VSA as its following leading factors.
 
+**Next Steps**
 The result of this machine learning analysis can help officials and healthcare workers develop more precautionary steps to prevent nicotine consumption. Knowing the
 strong influence factor that cannabis has could significantly enhance our understanding of the complex interactions between substance use and public health. By leveraging
 the insights gained from this analysis, policymakers can tailor targeted interventions and educational campaigns to address the specific challenges posed by cannabis in
@@ -81,5 +93,5 @@ reducing the prevalence of nicotine consumption. This comprehensive approach inv
 dynamics between different substances.
 
 
-Sources:
+**Sources**
 1. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4363846/
